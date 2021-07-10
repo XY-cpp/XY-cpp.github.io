@@ -35,7 +35,7 @@ function submit(d) {
 }
 function remove(d)
 {
-    store.fontIn = store.fontIn.substring(0, (d - 1) * 20) + "000000000000000000000000000000" + store.fontIn.substring(d * 20);
+    store.fontIn = store.fontIn.substring(0, (d - 1) * 20) + "00000000000000000000" + store.fontIn.substring(d * 20);
     window.location.href = "day" + d + ".html";
 
 }
